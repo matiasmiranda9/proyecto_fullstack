@@ -1,0 +1,1 @@
+INSERT INTO ventas (cliente, fecha, total) VALUES ('Juan Perez', '2024-03-21', 150.0);

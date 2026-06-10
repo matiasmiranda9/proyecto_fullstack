@@ -1,0 +1,116 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=bd_compras
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+  ms-catalogo:
+    build: ./catalogo
+    container_name: ms-catalogo
+    ports:
+      - "8082:8082"
+    environment: &spring_env
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/bd_compras?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+    depends_on:
+      db:
+        condition: service_healthy
+
+  ms-categorias:
+    build: ./categorias
+    container_name: ms-categorias
+    ports:
+      - "8081:8081"
+    environment: *spring_env
+    depends_on:
+      db:
+        condition: service_healthy
+
+  ms-cliente:
+    build: ./cliente
+    container_name: ms-cliente
+    ports:
+      - "8083:8083"
+    environment: *spring_env
+    depends_on:
+      db:
+        condition: service_healthy
+
+  ms-compras:
+    build: ./compras
+    container_name: ms-compras
+    ports:
+      - "8084:8084"
+    environment: *spring_env
+    depends_on:
+      db:
+        condition: service_healthy
+
+  ms-inventario:
+    build: ./inventario
+    container_name: ms-inventario
+    ports:
+      - "8085:8085"
+    environment: *spring_env
+    depends_on:
+      db:
+        condition: service_healthy
+
+  ms-marcas:
+    build: ./marcas
+    container_name: ms-marcas
+    ports:
+      - "8086:8086"
+    environment: *spring_env
+    depends_on:
+      db:
+        condition: service_healthy
+
+  ms-proveedores:
+    build: ./proveedores
+    container_name: ms-proveedores
+    ports:
+      - "8087:8087"
+    environment: *spring_env
+    depends_on:
+      db:
+        condition: service_healthy
+
+  ms-reportes:
+    build: ./reportes
+    container_name: ms-reportes
+    ports:
+      - "8088:8088"
+    environment: *spring_env
+    depends_on:
+      db:
+        condition: service_healthy
+
+  ms-usuarios:
+    build: ./usuarios
+    container_name: ms-usuarios
+    ports:
+      - "8089:8089"
+    environment: *spring_env
+    depends_on:
+      db:
+        condition: service_healthy
+
+  ms-ventas:
+    build: ./ventas
+    container_name: ms-ventas
+    ports:
+      - "8090:8090"
+    environment: *spring_env
+    depends_on:
+      db:
+        condition: service_healthy

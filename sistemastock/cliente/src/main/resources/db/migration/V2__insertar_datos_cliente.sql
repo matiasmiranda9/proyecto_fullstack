@@ -1,0 +1,1 @@
+INSERT INTO clientes (nombre, email, telefono) VALUES ('Juan Perez', 'juan@mail.com', '999888777');

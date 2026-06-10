@@ -1,0 +1,2 @@
+INSERT INTO categorias (nombre, descripcion) VALUES ('Electrónica', 'Televisores, celulares y computadoras');
+INSERT INTO categorias (nombre, descripcion) VALUES ('Muebles', 'Sofás, comedores y camas de dormitorio');

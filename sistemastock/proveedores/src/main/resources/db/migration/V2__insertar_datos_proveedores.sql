@@ -1,0 +1,1 @@
+INSERT INTO proveedores (empresa, contacto, ruc) VALUES ('Tech Supply SA', 'Carlos Ruiz', '20123456789');

@@ -1,0 +1,1 @@
+INSERT INTO compras (producto, cantidad, total) VALUES ('Monitor 4K', 5, 2500.0);

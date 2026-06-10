@@ -1,0 +1,1 @@
+INSERT INTO inventario (nombre_producto, stock_actual, ubicacion) VALUES ('Teclado Mecánico', 50, 'Almacén A-12');

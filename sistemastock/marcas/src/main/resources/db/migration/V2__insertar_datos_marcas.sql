@@ -1,0 +1,1 @@
+INSERT INTO marcas (nombre, pais_origen) VALUES ('Logitech', 'Suiza');

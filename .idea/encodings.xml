@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/sistemastock/catalogo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sistemastock/categorias/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sistemastock/cliente/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sistemastock/compras/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sistemastock/inventario/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sistemastock/marcas/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sistemastock/proveedores/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sistemastock/reportes/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sistemastock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sistemastock/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sistemastock/usuarios/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sistemastock/ventas/src/main/java" charset="UTF-8" />
+  </component>
+</project>

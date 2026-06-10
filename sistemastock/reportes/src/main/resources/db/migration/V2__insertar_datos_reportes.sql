@@ -1,0 +1,1 @@
+INSERT INTO reportes (tipo, fecha_generacion, contenido) VALUES ('Ventas Mensual', '2024-03-21', 'Resumen de ventas del mes...');

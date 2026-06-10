@@ -1,0 +1,1 @@
+INSERT INTO catalogo (nombre, descripcion, precio, stock) VALUES ('Laptop Gamer', 'Core i9 32GB RAM', 1500.0, 10);
